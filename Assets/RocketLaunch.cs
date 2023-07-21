@@ -5,9 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class RocketLaunch : MonoBehaviour
 {
+    [Header("Rocket Settings")]
     public float MaxHeight;
     public float MaxSpeed; // Maximum speed the rocket can have
+
+    [Header("Quiz Settings")]
     public int CorrectAnswers;
+    
     private float targetHeight;
     private bool launch = false;
     private bool falling = false;
@@ -24,7 +28,7 @@ public class RocketLaunch : MonoBehaviour
 
     void Update()
     {
-        CorrectAnswers = GameData.Instance.score;
+        //CorrectAnswers = GameData.Instance.score;
         
         if (Input.GetKeyDown(KeyCode.Space) && !launch)
         {

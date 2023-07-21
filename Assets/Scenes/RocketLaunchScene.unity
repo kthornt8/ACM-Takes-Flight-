@@ -571,8 +571,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f6367096fce06443bec231c5173bede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHeight: 700
-  MaxSpeed: 100
+  MaxHeight: 200
+  MaxSpeed: 50
   CorrectAnswers: 5
 --- !u!50 &1883114258
 Rigidbody2D:
