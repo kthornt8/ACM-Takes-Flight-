@@ -725,7 +725,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHeight: 500
   MaxSpeed: 100
-  CorrectAnswers: 10
+  CorrectAnswers: 0
 --- !u!50 &1883114258
 Rigidbody2D:
   serializedVersion: 4

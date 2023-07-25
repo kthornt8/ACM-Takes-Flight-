@@ -28,7 +28,7 @@ public class RocketLaunch : MonoBehaviour
 
     void Update()
     {
-        //CorrectAnswers = GameData.Instance.score;
+        CorrectAnswers = GameData.Instance.score;
         
         if (Input.GetKeyDown(KeyCode.Space) && !launch)
         {
