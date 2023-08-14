@@ -16,4 +16,9 @@ public class StartMenuManager : MonoBehaviour
     {
         SceneManager.LoadScene("QuestionsScene"); 
     }
+    public void QuitGame()
+    {
+        Application.Quit();
+        Debug.Log("QuitGame");
+    }
 }
