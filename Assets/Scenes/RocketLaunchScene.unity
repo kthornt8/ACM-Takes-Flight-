@@ -822,6 +822,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHeight: 500
   MaxSpeed: 100
+  StrafeSpeed: 20
   CorrectAnswers: 0
 --- !u!50 &1883114258
 Rigidbody2D:
