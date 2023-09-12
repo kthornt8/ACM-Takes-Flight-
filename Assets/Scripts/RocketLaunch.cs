@@ -14,13 +14,15 @@ public class RocketLaunch : MonoBehaviour
     public int CorrectAnswers;
 
     private float targetHeight;
-    private bool launch = false;
+    private bool launch = false; //do we need to set both to false or declare at all?
     private bool falling = false;
     private Vector3 startPos;
     private Rigidbody2D rb;
     private float speed; // This is now private as its value is calculated based on MaxSpeed and CorrectAnswers
     private float leftBound; // To store the leftmost x value the rocket can be
     private float rightBound; // To store the rightmost x value the rocket can be
+    public ParticleSystem flameEffect;
+    private bool isSpacebarPressed;
 
     void Start()
     {
@@ -43,6 +45,8 @@ public class RocketLaunch : MonoBehaviour
             targetHeight = (MaxHeight / 21) * CorrectAnswers;
             speed = (MaxSpeed / 20) * CorrectAnswers; // Calculate the speed
             launch = true;
+            //isSpacebarPressed = true;
+            //flameEffect.Play();
         }
 
         if (launch && transform.position.y < targetHeight)
@@ -70,6 +74,12 @@ public class RocketLaunch : MonoBehaviour
             // Wait for 3 seconds, then load the "QuestionsScene"
             StartCoroutine(LoadQuestionScene());
         }
+        //if (Input.GetKeyUp(KeyCode.Space))
+        //{
+            //isSpacebarPressed = false;
+            //flameEffect.Stop();
+        //}
+
 
         // Strafing:
         if (launch || falling) // Check if the rocket is in the air
@@ -82,6 +92,10 @@ public class RocketLaunch : MonoBehaviour
                 transform.position = newPosition;
             }
         }
+       // if (isSpacebarPressed)
+        //{
+            // Perform possible rocket movement and question logic here
+        //}
     }
 
     IEnumerator LoadQuestionScene()

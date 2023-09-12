@@ -40,7 +40,6 @@ public class ParallaxScrollingController : MonoBehaviour
 
     private void CheckImageLooping()
     {
-    do{
         if (image1.transform.position.x <= -screenWidth)
         {
             image1.transform.position += new Vector3(screenWidth * 3f, 0f, 0f);
@@ -55,7 +54,7 @@ public class ParallaxScrollingController : MonoBehaviour
         {
             image3.transform.position += new Vector3(screenWidth * 3f, 0f, 0f);
         }
-        }
-        while = loop = true;
+        
+        
     }
 }
