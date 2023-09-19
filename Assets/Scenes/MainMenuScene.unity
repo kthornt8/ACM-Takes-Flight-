@@ -541,7 +541,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 009c9de51e70c284f96b24173f0eacd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 0
+  score: 20
   buttonColors:
   - {r: 0.27564752, g: 1, b: 0, a: 0}
   - {r: 1, g: 0, b: 0, a: 0}
