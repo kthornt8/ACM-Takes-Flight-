@@ -16,6 +16,10 @@ public class StartMenuManager : MonoBehaviour
     {
         SceneManager.LoadScene("QuestionsScene"); 
     }
+    public void GoToInstructionsScreen()
+    {
+        SceneManager.LoadScene("InstructionsScene");
+    }
     public void QuitGame()
     {
         Application.Quit();
